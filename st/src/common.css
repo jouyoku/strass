@@ -1,0 +1,172 @@
+/*
+@import url("//fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("//fonts.googleapis.com/earlyaccess/cwtexming.css");
+*/
+
+/* This CSS is common to all pages */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+@layer base {
+  @font-face
+  {
+    font-family: mySongFont;
+    src: url('fonts/song/SourceHanSerifTW-Regular.woff2');
+  }
+}
+*/
+@layer components {
+  .m2-common-width {
+  }
+
+  .m2-container {
+    @apply m2-mx-auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .m2-default-settings {
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    width:100vw;
+    overflow-x:hidden;
+    @apply m2-text-msbt-text;
+  }
+
+  @screen sm {
+    .m2-common-width {
+      width: 720px;
+    }
+
+    .m2-container {
+      @apply m2-mx-auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .m2-default-settings {
+      font-family: "Noto Sans TC";
+      font-size: 14px;
+      width:100vw;
+      overflow-x:hidden;
+      @apply m2-text-msbt-text;
+    }
+  }
+
+  @screen md {
+    .m2-common-width {
+      width: 720px;
+    }
+
+    .m2-container {
+      @apply m2-mx-auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .m2-default-settings {
+      font-family: "Noto Sans TC";
+      font-size: 14px;
+      width:100vw;
+      overflow-x:hidden;
+      @apply m2-text-msbt-text;
+    }
+  }
+
+  @screen lg {
+    .m2-common-width {
+      width: 940px;
+    }
+
+    .m2-container {
+      @apply m2-mx-auto;
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+
+    .m2-default-settings {
+      font-family: "Noto Sans TC";
+      font-size: 14px;
+      width: unset;
+      overflow-x:hidden;
+      @apply m2-text-msbt-text;
+    }
+  }
+
+  @screen xl {
+    .m2-common-width {
+      width: 1140px;
+    }
+
+    .m2-container {
+      @apply m2-mx-auto;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .m2-default-settings {
+      font-family: "Noto Sans TC";
+      font-size: 14px;
+      width: unset;
+      overflow-x:hidden;
+      @apply m2-text-msbt-text;
+    }
+  }
+
+  @screen 2xl {
+    .m2-common-width {
+      width: 1140px;
+    }
+
+    .m2-container {
+      @apply m2-mx-auto;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .m2-default-settings {
+      font-family: "Noto Sans TC";
+      font-size: 14px;
+      width: unset;
+      overflow-x:hidden;
+      @apply m2-text-msbt-text;
+    }
+  }
+
+  .m2-default-settings a {
+    color:inherit;
+    @apply hover:m2-text-msbt-primary hover:m2-underline;
+  }
+
+  .m2-default-settings .m2-dark-background a {
+    color:inherit;
+    @apply hover:m2-text-white hover:m2-underline;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow : inset 0 0 6px rgba(0,0,0,0.3) ;
+    @apply m2-bg-msbt-primary;
+  }
+  ::-webkit-scrollbar {
+    width : 2px ;
+    height : 2px ;
+    background-color : #000;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply m2-bg-msbt-text;
+  }
+}
+/*
+body {
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+}
+body, html {width:100vw; overflow-x:hidden;}
+
+a	{
+  color:inherit;
+  @apply hover:m2-text-msbt-primary hover:m2-underline;
+}
+
+*/

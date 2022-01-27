@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="<%= ss_lang %>">
+
+<head>
+  <script>
+    //window.ss = true;
+    window.ss_image_url = '<%= ss_image_url %>';
+  </script>
+  <script>
+    window.ss_header_data = '<%= ss_header_data %>';
+
+    window.lsCartData = JSON.parse(localStorage.getItem('CartData'));
+    if(!window.lsCartData) {
+      window.lsCartData = {
+        itemList: []
+      }
+    }
+    window.lsInquiryList = JSON.parse(localStorage.getItem('InquiryList'));
+    if(!window.lsInquiryList) {
+      window.lsInquiryList = []
+    }
+    window.lsSampleList = JSON.parse(localStorage.getItem('SampleList'));
+    if(!window.lsSampleList) {
+      window.lsSampleList = []
+    }
+  </script>
+  <script>
+    window.ss_index_data = '<%= ss_index_data %>';
+  </script>
+  <script>
+    window.ss_footer_data = '<%= ss_footer_data %>';
+  </script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
+  <title><%= ss_title %></title>
+  <meta name="title" content="<%= ss_title %>" />
+  <meta name="keywords" content="<%= ss_keywords %>" />
+  <meta name="description" content="<%= ss_description %>" />
+  <meta name="url" content="<%= ss_url %>" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:locale" content="<%= ss_og_locale %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="<%= ss_og_site_name %>" />
+  <meta property="og:title" content="<%= ss_og_title %>" />
+  <meta property="og:url" content="<%= ss_og_url %>" />
+  <meta property="og:image" content="<%= ss_og_image %>" />
+  <meta property="og:description" content="<%= ss_og_description %>" />
+  <link rel="canonical" href="<%= ss_canonical %>" />
+  <link rel="alternate" hreflang="zh-TW" href="<%= ss_alternate_zh_tw %>" />
+  <link rel="alternate" hreflang="en" href="<%= ss_alternate_en %>" />
+</head>
+
+<body>
+  <div id="header"></div>
+  <script src="/src/header/header.tsx" type="module"></script>
+
+  <div id="index"></div>
+  <script src="/src/index/index.tsx" type="module"></script>
+
+  <div id="footer"></div>
+  <script src="/src/footer/footer.tsx" type="module"></script>
+
+</body>
+
+</html>

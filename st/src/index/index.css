@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .m2-slide {
+    @apply m2-relative m2-overflow-hidden;
+  }
+
+  .m2-slide-img {
+    @apply m2-absolute m2-inset-0 m2-transition-all m2-ease-in-out m2-duration-1000 m2-transform;
+  }
+
+  .m2-slide-li {
+    @apply m2-inline-block m2-mx-1 m2-w-3 m2-h-3 m2-border-white m2-border m2-rounded-xl;
+  }
+}

@@ -1,0 +1,75 @@
+/* This CSS is common to all pages */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .m2-logo-height {
+    height: 97px;
+  }
+
+  .m2-navbar-md-item-pair {
+    @apply m2-float-left m2-pr-9 m2-leading-7;
+  }
+
+  .m2-navbar-md-item-pair a {
+    @apply hover:m2-text-msbt-primary hover:m2-underline;
+  }
+
+  .m2-navbar-md-item-pair:last-child {
+    @apply m2-pr-0;
+  }
+
+  .m2-megamenu-height {
+    height: 360px;
+  }
+
+  .m2-megamenu {
+    @apply m2-z-10 m2-absolute m2-table m2-bg-white m2-grid m2-grid-cols-4 m2-bg-msbt-dark m2-megamenu-height;
+  }
+
+  .m2-megamenu-col {
+    @apply m2-mt-1 m2-table-row m2-megamenu-height;
+  }
+
+  .m2-megamenu-img-3\/4 {
+    @apply m2-transition-opacity m2-duration-300 m2-absolute m2-top-1 m2-w-3/4 m2-megamenu-height m2-object-cover;
+  }
+
+  .m2-megamenu-img-1\/2 {
+    @apply m2-megamenu-img-3/4;
+    @apply m2-w-1/2;
+  }
+
+  .m2-megamenu-col-list {
+    @apply m2-megamenu-col m2-bg-msbt-light m2-px-4 m2-overflow-y-auto m2-overflow-x-hidden;
+  }
+
+  .m2-megamenu-col-list a {
+    @apply hover:m2-underline;
+  }
+
+  .m2-megamenu-col-list-dark {
+    @apply m2-megamenu-col-list m2-bg-msbt-dark m2-text-white;
+  }
+
+  .m2-megamenu-col-list-dark a {
+    @apply hover:m2-text-white hover:m2-underline;
+  }
+
+  .m2-dropdown {
+    @apply m2-border-none m2-pr-4 m2-pb-0 m2-mt-2.5 m2-z-30 m2-absolute m2-block m2-right-0 m2-left-auto m2-top-full;
+  }
+
+  .m2-shopping-cart-content {
+    @apply m2-dropdown m2-z-20;
+  }
+
+  .m2-dropdown-menu {
+    @apply m2-dropdown m2-z-40;
+  }
+
+  .m2-dropdown-content {
+    @apply m2-items-stretch m2-w-full m2-relative m2-border m2-border-gray-500 m2-rounded;
+  }
+}
